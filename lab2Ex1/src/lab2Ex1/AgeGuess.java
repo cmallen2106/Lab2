@@ -13,18 +13,16 @@ public class AgeGuess {
 		
 		int age = randNum.nextInt(100); 
 		
-		
-		
-		Scanner scan = new Scanner (System.in);
-		
-		int ageGuess; 
-		
-		System.out.println("Guess the age:"); //Asking user to gues age
-		ageGuess = scan.nextLine(); 
-		
-		
-		//Reading out name and age to user
-		System.out.println("The age you guess is " + ageGuess + "and the correct age is" + age);
+		try (Scanner scan = new Scanner (System.in)) {
+			int ageGuess; 
+			
+			System.out.println("Guess the age:"); //Asking user to gues age
+			ageGuess = scan.nextInt(); 
+			
+			
+			//Reading out name and age to user
+			System.out.println("The age you guessed is " + ageGuess + ", and the correct age is " + age + "!");
+		}
 		
 	}
 }
