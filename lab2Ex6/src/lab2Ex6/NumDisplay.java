@@ -61,7 +61,10 @@ public class NumDisplay {
 			default: 
 				System.out.println ("You did not enter a number between 0 - 9. Please try again."); 
 		
+				// close the scanner
+				scan.close();
 		}
+		
 	}
 
 }
