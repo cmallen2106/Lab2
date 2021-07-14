@@ -22,10 +22,18 @@ public class AgeGuess {
 			System.out.println("Guess the age:"); 
 			ageGuess = scan.nextInt(); 
 			
-			
-			//Display the user guess and the correct answer
-			System.out.println("The age you guessed is " + ageGuess + ", and the correct age is " + age + "!");
-		}
-		
+			if(age != ageGuess) {
+				System.out.println("You guessed wrong!"); 
+			}
+			else
+				if (age < ageGuess) {
+					System.out.println("Older!"); 
+				}
+				else
+					if(age > ageGuess) {
+						System.out.println("Younger!"); 
+					}
+					else System.out.println("You guessed correct!");
+		}  
 	}
-}
+} 
