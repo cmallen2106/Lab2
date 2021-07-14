@@ -1,3 +1,7 @@
+//Lab 2 - Exercise 5
+//Christina Sosa
+//Programming Fundamentals, Summer 2021
+
 package lab2Ex5;
 
 public class FloatEqu {
