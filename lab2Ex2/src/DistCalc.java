@@ -21,7 +21,7 @@ public class DistCalc {
 			System.out.println("What is y2?"); 
 			double y2 = scan.nextDouble();
 			
-			double sqrt = Math.sqrt((x2-x1) + (y2-y1));
+			double sqrt = Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));
 			
 			// Round the output to three decimal places
 			  DecimalFormat fmt = new DecimalFormat ("0.###");
